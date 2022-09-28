@@ -38,7 +38,7 @@ let searchForm = document.querySelector('#search-form')
             resultsDiv.innerHTML = ('')
             console.log(songArray);
             if (songArray.length === 0) {
-                resultsDiv.innerText = `Uh oh! I couldn't find music to match your search. Please try again`;
+                resultsDiv.innerText = `plz enter search term`;
             } else {
             for (let song of songArray){
                 let recordDiv = document.createElement('div');

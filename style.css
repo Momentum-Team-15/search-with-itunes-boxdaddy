@@ -1,0 +1,48 @@
+h4 {
+    background-color: darkcyan;
+    color: white;
+    padding: 1rem;
+    border-bottom: .05rem solid red;
+    text-align:center;
+}
+header {
+    background-color: midnightblue;
+}
+.current-song {
+    
+    font-size: medium;
+    border-radius: 1rem solid white;
+    color: white;
+    text-align: center;
+}
+#search {
+padding: 1rem;
+border-bottom: 0.07rem solid red;
+text-align: center;
+color: white;
+font-size:x-large;
+background-color: slateblue;
+}
+#search-button {
+    font-size: small;
+}
+#results {
+    border: 1rem solid black;
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+}
+.record {
+    border: 1rem;
+    padding: 1rem;
+    align-content: space-between;
+    width: 20%;
+    text-align: center;
+    color: white;
+    background-color: rgba(130, 126, 132, .30);
+
+}
+
+#audio-preview {
+    width: 20%
+}

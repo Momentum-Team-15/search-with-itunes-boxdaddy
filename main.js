@@ -60,7 +60,24 @@ let searchForm = document.querySelector('#search-form')
                 recordDiv.appendChild(imageDiv);
                 recordDiv.appendChild(titleDiv);
                 recordDiv.appendChild(artistDiv);
+
+                let audio = document.querySelector('#audio-preview')
+                let currentSong = document.querySelector('.current-song')
+        
+                recordDiv.addEventListener('click', playCrackle);
+                function playCrackle() {
+                    const crackle = new Audio('resources/crackle.mp3');
+                    crackle.play();
+                }
+        
+                function playAudio() {
+                    audio.src = song.previewUrl
+                    currentSong.innerText = `Currently playing: ${song.trackName} by ${song.artistName}`
+                    audio.play();
+                }
+                recordDiv.addEventListener('click', e =>
+                setTimeout(playAudio, 1800)
         
 
 
-            }}}}
+            )}}}}

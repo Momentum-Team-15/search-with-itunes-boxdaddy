@@ -24,7 +24,8 @@ let searchForm = document.querySelector('#search-form')
         })
         .then(data => {
             let songs = data.results;
-            showResults(songs);
+            let songlist = songs.slice(0,20) 
+            showResults(songlist);
         }).catch(error => {
             console.log(error);
             alert(`Your request failed, for the reason: ${error}`);
@@ -81,3 +82,6 @@ let searchForm = document.querySelector('#search-form')
 
 
             )}}}}
+
+
+            

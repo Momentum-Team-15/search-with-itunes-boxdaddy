@@ -10,11 +10,12 @@
 
 <body>
   <header>
-    <h4>the ugliest itunes search on the internet</h4>
+    <h4>itunes search</h4>
     <div id="playback">
+      <div class="current-song">Currently Playing:</div>
+      <br>
       <audio id="audio-preview" controls src="">
       </audio>
-      <div class="current-song">Currently Playing:</div>
     </div>
   </header>
   <div id="container">
@@ -22,7 +23,7 @@
         <form id="search-form" action="">
           
           <input id="search-box" type="text" name="term" placeholder="type artist name" required>
-          <button id="search-button">get it</button>
+          <button id="search-button">search!</button>
           <!-- when the button is in the form, it knows it is a submit button -->
         </form>
       </div>
@@ -31,3 +32,4 @@
   </div>
 </body>
 </html>
+
